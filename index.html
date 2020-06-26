@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.0/cyborg/bootstrap.min.css">
+    <!-- Google Icons Font CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Sharp|Material+Icons+Round|Material+Icons+Two+Tone">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>FC Magic Mirror</title>
+</head>
+
+<body>
+
+    <div class="container-fluid pb-3">
+        <h3 id="app-date">Saturday, 13 July, 2020.</h3>
+    </div>
+
+    <div class="d-flex pb-2">
+        <div>
+            <img id="main-img-today" src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+        </div>
+        <div>
+            <div class="d-flex flex-column">
+                <div>
+                    <h4><span class="capitalize" id="main-description">Sky is clear</span>, <span id="main-temp">75&deg;F</span></h4>
+                </div>
+                <div>
+                    <span class="material-icons vtop">
+                        wb_sunny
+                    </span>
+                    <span id="main-sunrise">5:21 AM</span>
+                    &nbsp;&nbsp;
+                    <span class="material-icons vtop">
+                        nights_stay
+                    </span>
+                    <span id="main-sunset">9:21 PM</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="d-flex flex-column">
+                <div class="px-3">Cloud Cover</div>
+                <div class="px-3">Humidity:</div>
+                <div class="px-3">Wind:</div>
+            </div>
+        </div>
+        <div>
+            <div class="d-flex flex-column">
+                <div id="main-cloud-cover">10%</div>
+                <div id="main-humidity">50%</div>
+                <div id="main-wind-speed">3.5 Mph</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="forecast">
+
+        <div class="d-flex py-2">
+            <div>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+            </div>
+            <div>
+                <div class="d-flex flex-column">
+                    <div><h6>Today (Thursday)</h6></div>
+                    <div>6/25/2020</div>
+                    <div><strong>Sky is clear</strong></div>
+                    <div>
+                        Temperatures
+                        15.1&deg;F
+                        (min)
+                        &nbsp;
+                        25.5&deg;F
+                        (max)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex py-2">
+            <div>
+                <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+            </div>
+            <div>
+                <div class="d-flex flex-column">
+                    <div><h6>Tomorrow (Friday)</h6></div>
+                    <div>6/26/2020</div>
+                    <div><strong>Scattered clouds</strong></div>
+                    <div>
+                        Temperatures
+                        12.1&deg;F
+                        (min)
+                        &nbsp;
+                        18.3&deg;F
+                        (max)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex py-2">
+            <div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+            </div>
+            <div>
+                <div class="d-flex flex-column">
+                    <div><h6>In 2 days (Saturday)</h6></div>
+                    <div>6/27/2020</div>
+                    <div><strong>Showers</strong></div>
+                    <div>
+                        Temperatures
+                        11.1&deg;F
+                        (min)
+                        &nbsp;
+                        14.6&deg;F
+                        (max)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    
+    <script>
+        var SESSION = {},
+            exports = {}; /* Fix popper's ReferenceError exports not defined issue.. */
+        /* https://stackoverflow.com/questions/42497479/uncaught-referenceerror-exports-is-not-defined-in-filed-generated-by-typescript */
+    </script>
+
+    <!-- Javascript Libraries - Using CDNJS -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Popper (Closing of alerts, etc among other things when using Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.2/cjs/popper.min.js" type="module"></script>
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    
+
+    <script src="./js/fc.mm.js"></script>
+
+    <script>
+        $(document).ready(MM.init);
+    </script>
+</body>
+</html>
