@@ -56,7 +56,7 @@ var MM = (function () {
         /* Humidity */
         $('#main-humidity').html(`${wData.current.humidity}%`);
         /* Wind Speed */
-        $('#main-wind-speed').html(`${wData.current.wind_speed} Mph`)
+        $('#main-wind-speed').html(`${wData.current.wind_speed} Mph`);
         /* Clear Forecast */
         //$forecast.empty();
     };
