@@ -99,7 +99,7 @@ var MM = (function () {
         let result = kelvin;
         if (to === 'F') {
             /* Kelvin to Fahrenheit */
-            result = (kelvin - 273.15) * (9 / 5);
+            result = (kelvin - 273.15) * (9 / 5) + 32;
         } else if (to === 'C') {
             /* Kelvin to Celsius */
             result = kelvin - 273.15;
@@ -111,7 +111,7 @@ var MM = (function () {
         if (DEMO_MODE) {
             alert('No APPID found, please request an APPID ' +
             'from openweatermap.com and add it to this project, ' +
-            'see README for more information\n\nThe system will now be in DEMO mode.');
+            'see README for more information.\n\nThe system will now be in DEMO mode.');
         }
         _getLatLong((lat, long) => {
             SESSION.lat = lat;
