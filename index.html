@@ -17,13 +17,19 @@
 
 <body>
 
+    <div id="weather-error" class="container-fluid mt-3 d-none">
+        <div class="alert alert-danger" role="alert">
+            An error retrieving weather data has been detected, please consult documentation.
+        </div>
+    </div>
+
     <div class="container-fluid pb-3">
         <h3 id="app-date">Saturday, 13 July, 2020.</h3>
     </div>
 
     <div class="d-flex pb-2">
         <div>
-            <img id="main-img-today" src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+            <img id="main-img-today" src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
         </div>
         <div>
             <div class="d-flex flex-column">
@@ -63,7 +69,7 @@
 
         <div class="d-flex py-2">
             <div>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
             </div>
             <div>
                 <div class="d-flex flex-column">
@@ -84,7 +90,7 @@
 
         <div class="d-flex py-2">
             <div>
-                <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+                <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="">
             </div>
             <div>
                 <div class="d-flex flex-column">
@@ -105,7 +111,7 @@
 
         <div class="d-flex py-2">
             <div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
             </div>
             <div>
                 <div class="d-flex flex-column">
@@ -125,9 +131,7 @@
         </div>
 
     </div>
-    
 
-    
     <script>
         var SESSION = {},
             exports = {}; /* Fix popper's ReferenceError exports not defined issue.. */
